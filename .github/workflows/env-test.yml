@@ -40,3 +40,4 @@ jobs:
           echo TRAILING_NEWLINE=$TRAILING_NEWLINE
           echo MIDLINE=$MIDLINE
           echo MANYLINE=$MANYLINE
+          env
