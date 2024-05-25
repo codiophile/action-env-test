@@ -31,6 +31,7 @@ jobs:
             core.exportVariable('NO_NEWLINE', 'No newline here.')
             core.exportVariable('TRAILING_NEWLINE', 'Newline at the end.\r\n')
             core.exportVariable('MIDLINE', 'One\r\nTwo.')
+            core.exportVariable('MANYLINE', '\r\nOne\r\nTwo\r\n.\r\n')
 
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
@@ -38,3 +39,4 @@ jobs:
           echo NO_NEWLINE=$NO_NEWLINE
           echo TRAILING_NEWLINE=$TRAILING_NEWLINE
           echo MIDLINE=$MIDLINE
+          echo MANYLINE=$MANYLINE
