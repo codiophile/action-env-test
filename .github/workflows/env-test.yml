@@ -29,8 +29,8 @@ jobs:
         with:
           script: |
             core.exportVariable('NO_NEWLINE', 'No newline here.')
-            core.exportVariable('TRAILING_NEWLINE', 'Newline at the end.\n')
-            core.exportVariable('MIDLINE', 'One\nTwo.')
+            core.exportVariable('TRAILING_NEWLINE', 'Newline at the end.\r\n')
+            core.exportVariable('MIDLINE', 'One\r\nTwo.')
 
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
